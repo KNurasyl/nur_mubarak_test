@@ -8,8 +8,8 @@ export const WorkSpace = () => {
     return (
         <Layout className="app-content">
             <Routes>
-                <Route path={"nur_mubarak_test/"} element={<>asdasdasdassasdasdasdads</>} />
-                <Route path={"nur_mubarak_test/login"} element={<Login/>} />
+                <Route path={"/"} element={<Login/>} />
+                <Route path={"/login"} element={<Login/>} />
             </Routes>
         </Layout>
     );

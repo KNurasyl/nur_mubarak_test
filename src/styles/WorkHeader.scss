@@ -4,6 +4,6 @@
     & header {
         height: 60px;
         padding: 15px;
-        @include flex_dir_align_justify(normal, center, space-between);
+        @include flex_dir_align_justify(row, center, space-between);
     }
 }

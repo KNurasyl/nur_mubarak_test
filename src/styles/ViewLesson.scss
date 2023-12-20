@@ -1,0 +1,88 @@
+@import "_mixin";
+
+.ViewLesson {
+    padding: 15px 20px;
+    border-top: 1px solid #3333331A;
+    background: #FEFEFE;
+
+    & h2 {
+        text-decoration: underline;
+        @include size_weight_height_color(24px, 500, normal, #333);
+    }
+
+    & h3 {
+        @include size_weight_height_color(16px, 500, normal, #333);
+        margin-top: 25px;
+    }
+
+    & p {@include size_weight_height_color(14px, 400, normal, #333)}
+
+    & .ant-collapse {
+        margin-top: 25px;
+        border: 1px solid #44A5AF;
+        border-radius: 0;
+
+        & .ant-collapse-item {
+            border-bottom: 1px solid #44A5AF;
+            background: #333;
+            border-radius: 0;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            & .anticon {
+                & svg {
+                    fill: #FEFEFE;
+                }
+            }
+
+            & .ant-collapse-header-text {
+                @include size_weight_height_color(14px, 500, normal, #FEFEFE);
+            }
+        }
+    }
+
+    & .descriptionTitle {
+        @include size_weight_height_color(16px, 500, normal, #333333);
+        margin-top: 40px;
+    }
+
+    & .descriptionText {
+        @include size_weight_height_color(14px, 400, normal, #333333);
+        margin-bottom: 50px;
+    }
+
+    & .price_block {
+        margin-bottom: 30px;
+        & div {
+            height: 35px;
+            @include flex_dir_align_justify(row, center, space-between);
+            & p {
+                @include size_weight_height_color(14px, 400, normal, #333);
+                margin: 0;
+
+                &:last-child {
+                    @include size_weight_height_color(15px, 500, normal, #333);
+                }
+            }
+        }
+
+        & button {
+            border-radius: 5px;
+            background: #44A5AF;
+            border: none;
+            height: 45px;
+            width: 100%;
+            margin-top: 15px;
+            @include size_weight_height_color(16px, 500, normal, #FEFEFE);
+        }
+    }
+
+    & .WorkFooter {
+        padding: 15px 20px;
+        margin: 0px -20px -15px -20px;
+        border-top: 1px solid #FEFEFE;
+        box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.10);
+    }
+}

@@ -1,5 +1,34 @@
 @import "_mixin";
 
 .WorkFooter {
+    padding: 15px 20px;
+    & .subtext {
+        @include size_weight_height_color(14px, 400, normal, #333333);
+        margin: 0;
+        text-align: center;
+    }
 
+    & .content {
+        @include flex_dir_align_justify(row, center, space-between);
+
+        & .logos {
+            width: 30%;
+            
+            & a {
+                display: block;
+                height: 40px;
+                width: 90%;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        & .text {
+            width: 60%;
+            @include size_weight_height_color(14px, 400, normal, #333333);
+        }
+    }
 }

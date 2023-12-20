@@ -1,5 +1,156 @@
 @import "_mixin";
 
 .Main {
+    & .promo {
+        height: 230px;
+        background: #44A5AF;
+        padding: 15px 20px;
+
+        & .content {
+            height: 200px;
+            padding: 15px;
+            border-radius: 5px;
+            background: #D4C8A9;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+            @include flex_dir_align_justify(column, flex-start, space-between);
+            
+            & h3 {@include size_weight_height_color(15px, 600, normal, #FEFEFE)}
+            & h2 {@include size_weight_height_color(20px, 600, normal, #FEFEFE); margin-top: 10px;}
+            & p {@include size_weight_height_color(14px, 400, normal, #FFFFFF)}
+
+            & button {
+                width: 150px;
+                height: 30px;
+                border-radius: 5px;
+                border: none;
+                text-align: left;
+                background: #FEFEFE;
+                padding: 12px;
+                @include flex_dir_align_justify(row, center, space-between);
+                @include size_weight_height_color(14px, 500, normal, #333333);
+            }
+        }
+    }
+
+    & .Lessons {
+        padding: 15px 20px;
+
+        & h3 {
+            @include size_weight_height_color(24px, 500, normal, #333);
+            text-decoration: underline;
+        }
+
+        & p {
+            @include size_weight_height_color(14px, 500, normal, #333);
+            margin-top: 10px;
+        }
+
+        & .ant-input-affix-wrapper {
+            height: 40px;
+        }
+
+        & .ant-input-group-addon {
+            & button {
+                height: 40px !important;
+            }
+        }
+
+        & .content {
+            margin-top: 25px;
+            & .Lesson {
+                border-radius: 10px;
+                background: #FEFEFE;
+                box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.25);
     
+                & .ant-card-body {
+                    padding: 15px;
+                    & p {@include size_weight_height_color(12px, 400, normal, #333)}
+                    & h2 {
+                        @include size_weight_height_color(20px, 500, normal, #333);
+                        margin-bottom: 15px;
+                    }
+    
+                    & div {
+                        height: 25px;
+                        @include flex_dir_align_justify(row, center, space-between);
+                        & p {
+                            @include size_weight_height_color(13px, 400, normal, #333);
+                            margin: 0;
+    
+                            &:last-child {
+                                @include size_weight_height_color(15px, 500, normal, #333);
+                            }
+                        }
+                    }
+    
+                    & .pagination {
+                        margin-top: 15px;
+                        @include flex_dir_align_justify(row, center, space-between);
+    
+                        & button {
+                            height: 35px;
+                            border-radius: 5px;
+                            border: 1px solid #333;
+    
+                            &:first-child {
+                                width: 35%;
+                                background: #FEFEFE;
+                                @include size_weight_height_color(12px, 500, normal, #333);
+                            }
+    
+                            &:last-child {
+                                width: 55%;
+                                background: #44A5AF;
+                                border: none;
+                                @include size_weight_height_color(12px, 500, normal, #FEFEFE);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .Contacts {
+        margin-top: 25px;
+        height: 360px;
+        background: #44A5AF;
+        padding: 15px 20px;
+        @include flex_dir_align_justify(column, center, center);
+
+        & form {
+            border-radius: 5px;
+            background: #D4C8A9;
+            padding: 15px;
+            height: 290px;
+            @include flex_dir_align_justify(column, normal, space-between);
+
+            & h3 {@include size_weight_height_color(23px, 500, normal, #FEFEFE)}
+
+            & .inputs {
+                height: 110px;
+                @include flex_dir_align_justify(column, center, space-between);
+
+                & .ant-input {
+                    height: 45px !important;
+                    background: none;
+                    border-radius: 5px;
+                    border: 1px solid #FEFEFE;
+                    color: #FEFEFE;
+    
+                    &::placeholder {
+                        color: #FEFEFE;
+                    }
+                }
+            }
+
+            & button {
+                height: 45px;
+                border-radius: 5px;
+                border: none;
+                background: #44A5AF;
+                @include size_weight_height_color(12px, 500, normal, #FEFEFE);
+            }
+        }
+    }
 }

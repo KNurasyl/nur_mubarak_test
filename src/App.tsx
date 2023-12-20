@@ -5,7 +5,6 @@ import { Content } from "antd/es/layout/layout";
 import { WorkSpace } from "./components/WorkSpace";
 import { useAppSelector } from "./store";
 import { WorkHeader } from "./components/WorkHeader";
-import { WorkFooter } from "./components/WorkFooter";
 import "./styles/App.scss";
 
 export const App = () => {
@@ -15,12 +14,9 @@ export const App = () => {
     <BrowserRouter>
       <Layout className="app-layout">
           <WorkHeader/>
-
           <Content>
             <WorkSpace />
           </Content>
-
-          <WorkFooter/>
       </Layout>
     </BrowserRouter>
   );

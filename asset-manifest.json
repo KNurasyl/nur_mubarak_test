@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nur_mubarak_test/static/css/main.ab93955f.css",
+    "main.js": "/nur_mubarak_test/static/js/main.c99c34f8.js",
+    "static/js/787.9e9f4ffd.chunk.js": "/nur_mubarak_test/static/js/787.9e9f4ffd.chunk.js",
+    "index.html": "/nur_mubarak_test/index.html",
+    "main.ab93955f.css.map": "/nur_mubarak_test/static/css/main.ab93955f.css.map",
+    "main.c99c34f8.js.map": "/nur_mubarak_test/static/js/main.c99c34f8.js.map",
+    "787.9e9f4ffd.chunk.js.map": "/nur_mubarak_test/static/js/787.9e9f4ffd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab93955f.css",
+    "static/js/main.c99c34f8.js"
+  ]
+}

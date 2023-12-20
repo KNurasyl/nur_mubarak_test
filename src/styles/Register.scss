@@ -1,0 +1,55 @@
+@import "_mixin";
+
+.Register {
+    @include flex_dir_align_justify(column, flex-start, normal);
+    height: 100%;
+    padding: 0 20px;
+
+    & .title {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        @include size_weight_height_color(20px, 700, normal, #333);
+    }
+
+    & form {
+        & .ant-input {
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid #000;
+            margin-bottom: 15px;
+        }
+
+        & .ant-input-password {
+            height: 45px;
+            border: 1px solid #000;
+            margin-bottom: 15px;
+
+            & .ant-input {
+                height: 100%;
+                border: none;
+            }
+        }
+
+        & button {
+            margin: 10px 0;
+            width: 100%;
+            height: 45px;
+            background-color: #44A5AF;
+            border-radius: 5px;
+            border: none;
+            @include size_weight_height_color(20px, 500, normal, #FFFFFF);
+        }
+
+        & .login_account {
+            margin: 0;
+            text-align: center;
+            cursor: pointer;
+            @include size_weight_height_color(15px, 500, normal, #000);
+
+            & span {
+                @include size_weight_height_color(15px, 500, normal, #44A5AF);
+            }
+        }
+    }
+}
